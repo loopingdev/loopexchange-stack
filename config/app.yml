@@ -1,19 +1,19 @@
 ---
 app:
   name: OpenDAX
-  domain: app.local
+  domain: koreanpop.store
   subdomain: www
   show_landing: true
 render_protect: false
 csrfEnabled: false
 ssl:
-  enabled: false
+  enabled: true
   email: support@example.com
 updateVersions: false
 images:
-  peatio: quay.io/openware/peatio:2.6.28
+  peatio: quay.io/loopingdev/loopexchange:master
   barong: quay.io/openware/barong:2.6.19
-  frontend: quay.io/openware/baseapp:2.6.5
+  frontend: quay.io/loopingdev/loopexchange-frontend:master
   tower: quay.io/openware/tower:2.6.36
   rango: quay.io/openware/rango:2.6.1
 finex:
@@ -21,7 +21,7 @@ finex:
   image: quay.io/openware/finex:2.6.12
   license_key: changeme
 vendor:
-  frontend: git@github.com:openware/baseapp.git
+  frontend: git@github.com:loopingdev/loopexchange-frontend.git
 kyc:
   provider: local
   authorization_token: changeme
